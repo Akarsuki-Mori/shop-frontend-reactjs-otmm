@@ -1,0 +1,54 @@
+.scheduler-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scheduler-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.scheduler-days-row {
+    display: grid;
+    grid-template-columns: repeat(31, 1fr);
+    /* Adjust based on the number of days in a month */
+    gap: 5px;
+}
+
+.scheduler-workers-row {
+    display: grid;
+    grid-template-columns: repeat(31, 1fr);
+    /* Same layout as days */
+    gap: 5px;
+}
+
+.scheduler-day,
+.scheduler-workers {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.current-month {
+    background-color: #f0f8ff;
+}
+
+.other-month {
+    background-color: #f9f9f9;
+}
+
+.worker {
+    background-color: #87cefa;
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+}
+
+.no-worker {
+    color: #888;
+    font-size: 12px;
+}

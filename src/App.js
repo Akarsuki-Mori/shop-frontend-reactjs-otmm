@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import React, { useEffect } from 'react';
+import ProductEntry from "./pages/product/ProductEntry";
+import ProductList from "./pages/product/ProductList";
+import Schedular from "./pages/test/MonthlyScheduler";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<RedirectToMainPage />} />
+          <Route path="*" element={<RedirectToMainPage />} />
+          <Route path="/products/entry" element={<ProductEntry />}></Route>
+          <Route path="/products/entry/:id" element={<ProductEntry />}></Route>
+          <Route path="/products/list" element={<ProductList />}></Route>
+
+          <Route path="/calendar" element={<Schedular />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
+}
+
+function RedirectToMainPage() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate('/products/list');
+  }, [navigate]);
+
+  return null;
 }
 
 export default App;

@@ -1,0 +1,214 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.logo {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 48px;
+    border-radius: 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #464646;
+}
+
+.container {
+    width: 440px;
+    padding: 20px 32px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10%;
+}
+
+.container form label {
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    display: block;
+    margin-top: 12px;
+}
+
+.container form .custome-input {
+    position: relative;
+}
+
+.container form .custome-input input {
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 46px;
+    letter-spacing: 0.03rem;
+    border: 1px solid #1d1d1d;
+    background: transparent;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+}
+
+.container form .custome-input input:focus {
+    border-color: #5222fd;
+}
+
+.container form .custome-input i {
+    position: absolute;
+    font-size: 28px;
+    right: 10px;
+    top: 14px;
+    transition: all 0.3s ease;
+}
+
+.container form .custome-input input:focus+i {
+    color: #5222fd;
+}
+
+.container form .submitBtn {
+    width: 100%;
+    margin-top: 30px;
+    background: #6b43ff;
+    color: #fff;
+    border: none;
+    line-height: 50px;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.container form .cancelBtn {
+    width: 100%;
+    margin-top: 10px;
+    background: #d91e1e;
+    color: #fff;
+    border: none;
+    line-height: 50px;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* .container form .submitBtn:hover {
+    background: #5222fd;
+} */
+
+.container .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.head {
+    padding: 2%;
+}
+
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.main td {
+    text-align: center;
+}
+
+.main td,
+.main th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.main tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.main tr:hover {
+    background-color: #ddd;
+}
+
+.main th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.editbtn {
+    background-color: rgb(90, 225, 90);
+    padding: 1%;
+    border-radius: 10px;
+    width: 60px;
+}
+
+.deletebtn {
+    background-color: rgb(236, 49, 36);
+    padding: 1%;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 60px;
+    color: aliceblue;
+}
+
+.button-container {
+    margin-bottom: 5px;
+}
+
+.addProductBtn {
+    background-color: #04AA6D;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 7px;
+    /* Padding for the button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 14px;
+    /* Font size */
+}
+
+.addProductBtn:hover {
+    background-color: #1098ce;
+    /* Darker green on hover */
+}
+
+h1 {
+    text-align: center;
+}
+
+.error-message {
+    font-weight: bold;
+    color: red;
+    margin-top: 5px;
+}
