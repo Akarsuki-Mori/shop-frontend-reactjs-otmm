@@ -56,7 +56,6 @@ export default function ProductEntry() {
       }
       navigate("/products/list");
     } catch (error) {
-      console.log(error);
       if (error.response) {
         console.log(error.response);
         // Assuming the errors are returned as an array of strings
